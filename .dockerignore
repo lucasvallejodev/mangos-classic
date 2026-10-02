@@ -1,0 +1,15 @@
+.git
+.github
+.env
+.env.*
+data
+config
+logs
+bin
+build*
+win
+contrib/classic-db/InstallFullDB.config
+contrib/classic-db/backups/*
+!contrib/classic-db/backups/.gitignore
+**/*.o
+**/*.so

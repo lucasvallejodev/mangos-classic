@@ -1,0 +1,194 @@
+# CMaNGOS Classic + AHBot + Playerbots
+#
+#   cp .env.example .env    # then edit it
+#   docker compose up -d --build
+#
+# Every server setting can be changed from .env, see .env.example.
+
+x-build: &build
+  context: .
+  args:
+    BUILD_JOBS: ${BUILD_JOBS:-0}
+
+x-db-env: &db-env
+  DB_HOST: db
+  DB_PORT: 3306
+
+services:
+  db:
+    image: mariadb:11.4
+    container_name: cmangos-db
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?set DB_ROOT_PASSWORD in .env}
+      TZ: ${TZ:-UTC}
+    command:
+      - --innodb-buffer-pool-size=${DB_BUFFER_POOL_SIZE:-512M}
+      - --max-allowed-packet=128M
+      - --sql-mode=NO_ENGINE_SUBSTITUTION
+    volumes:
+      - db-data:/var/lib/mysql
+    # Uncomment to reach the database from the host (HeidiSQL, DBeaver...)
+    # ports:
+    #   - "127.0.0.1:3306:3306"
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+  db-init:
+    build:
+      <<: *build
+      target: dbinit
+    image: cmangos-classic-dbinit:local
+    container_name: cmangos-db-init
+    restart: "no"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      <<: *db-env
+      DB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      DB_USER: ${DB_USER:-mangos}
+      DB_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD in .env}
+      WORLD_DB: ${WORLD_DB:-classicmangos}
+      CHAR_DB: ${CHAR_DB:-classiccharacters}
+      REALM_DB: ${REALM_DB:-classicrealmd}
+      LOGS_DB: ${LOGS_DB:-classiclogs}
+      DB_AUTO_UPDATE: ${DB_AUTO_UPDATE:-1}
+      DB_LOCALES: ${DB_LOCALES:-YES}
+      REALM_ID: ${REALM_ID:-1}
+      REALM_NAME: ${REALM_NAME:-CMaNGOS Classic}
+      REALM_ADDRESS: ${REALM_ADDRESS:-127.0.0.1}
+      REALM_PORT: ${REALM_PORT:-8085}
+      REALM_TYPE: ${REALM_TYPE:-1}
+      REALM_TIMEZONE: ${REALM_TIMEZONE:-1}
+      REALM_SECURITY_LEVEL: ${REALM_SECURITY_LEVEL:-0}
+
+  realmd:
+    build:
+      <<: *build
+      target: runtime
+    image: cmangos-classic:local
+    container_name: cmangos-realmd
+    restart: unless-stopped
+    command: ["realmd"]
+    depends_on:
+      db-init:
+        condition: service_completed_successfully
+    # Raw Realmd_* overrides from .env are passed through here
+    env_file: .env
+    environment:
+      <<: *db-env
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      Realmd_LoginDatabaseInfo: "db;3306;${DB_USER:-mangos};${DB_PASSWORD};${REALM_DB:-classicrealmd}"
+      Realmd_LogsDir: /opt/cmangos/logs
+      Realmd_RealmServerPort: 3724
+    ports:
+      - "${REALMD_PORT:-3724}:3724"
+    volumes:
+      - ./config:/opt/cmangos/etc
+      - ./logs:/opt/cmangos/logs
+
+  mangosd:
+    build:
+      <<: *build
+      target: runtime
+    image: cmangos-classic:local
+    container_name: cmangos-mangosd
+    restart: unless-stopped
+    command: ["mangosd"]
+    depends_on:
+      db-init:
+        condition: service_completed_successfully
+      realmd:
+        condition: service_started
+    # The server console reads stdin and shuts down on EOF, so keep a TTY attached.
+    # Use `docker attach cmangos-mangosd` for the console, detach with Ctrl-P Ctrl-Q.
+    stdin_open: true
+    tty: true
+    # Give the world server time to save characters on shutdown
+    stop_grace_period: 2m
+    # Raw Mangosd_* / PlayerBots_* / Anticheat_* overrides from .env are passed through here
+    env_file: .env
+    environment:
+      <<: *db-env
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+
+      # --- Paths & database ---
+      Mangosd_DataDir: /opt/cmangos/data
+      Mangosd_LogsDir: /opt/cmangos/logs
+      Mangosd_LoginDatabaseInfo: "db;3306;${DB_USER:-mangos};${DB_PASSWORD};${REALM_DB:-classicrealmd}"
+      Mangosd_WorldDatabaseInfo: "db;3306;${DB_USER:-mangos};${DB_PASSWORD};${WORLD_DB:-classicmangos}"
+      Mangosd_CharacterDatabaseInfo: "db;3306;${DB_USER:-mangos};${DB_PASSWORD};${CHAR_DB:-classiccharacters}"
+      Mangosd_LogsDatabaseInfo: "db;3306;${DB_USER:-mangos};${DB_PASSWORD};${LOGS_DB:-classiclogs}"
+      Mangosd_RealmID: ${REALM_ID:-1}
+      Mangosd_WorldServerPort: 8085
+
+      # --- Realm ---
+      Mangosd_GameType: ${REALM_TYPE:-1}
+      Mangosd_RealmZone: ${REALM_TIMEZONE:-1}
+      Mangosd_Motd: ${MOTD:-Welcome to CMaNGOS Classic}
+      Mangosd_PlayerLimit: ${PLAYER_LIMIT:-100}
+      Mangosd_Console_Enable: ${CONSOLE_ENABLED:-1}
+      Mangosd_LogLevel: ${LOG_LEVEL:-1}
+      Mangosd_mmap_enabled: ${MMAPS_ENABLED:-1}
+
+      # --- Characters ---
+      Mangosd_MaxPlayerLevel: ${MAX_PLAYER_LEVEL:-60}
+      Mangosd_StartPlayerLevel: ${START_PLAYER_LEVEL:-1}
+      Mangosd_StartPlayerMoney: ${START_PLAYER_MONEY:-0}
+      Mangosd_AllowTwoSide_Accounts: ${ALLOW_TWO_SIDE_ACCOUNTS:-0}
+
+      # --- Rates ---
+      Mangosd_Rate_XP_Kill: ${RATE_XP_KILL:-1}
+      Mangosd_Rate_XP_Quest: ${RATE_XP_QUEST:-1}
+      Mangosd_Rate_XP_Explore: ${RATE_XP_EXPLORE:-1}
+      Mangosd_Rate_Rest_InGame: ${RATE_REST:-1}
+      Mangosd_Rate_Rest_Offline_InTavernOrCity: ${RATE_REST:-1}
+      Mangosd_Rate_Rest_Offline_InWilderness: ${RATE_REST:-1}
+      Mangosd_Rate_Drop_Money: ${RATE_DROP_MONEY:-1}
+      Mangosd_Rate_Drop_Item_Poor: ${RATE_DROP_ITEMS:-1}
+      Mangosd_Rate_Drop_Item_Normal: ${RATE_DROP_ITEMS:-1}
+      Mangosd_Rate_Drop_Item_Uncommon: ${RATE_DROP_ITEMS:-1}
+      Mangosd_Rate_Drop_Item_Rare: ${RATE_DROP_ITEMS:-1}
+      Mangosd_Rate_Drop_Item_Epic: ${RATE_DROP_ITEMS:-1}
+      Mangosd_Rate_Reputation_Gain: ${RATE_REPUTATION:-1}
+      Mangosd_Rate_Honor: ${RATE_HONOR:-1}
+      Mangosd_SkillGain_Crafting: ${RATE_SKILL_GAIN:-1}
+      Mangosd_SkillGain_Gathering: ${RATE_SKILL_GAIN:-1}
+      Mangosd_SkillGain_Weapon: ${RATE_SKILL_GAIN:-1}
+      Mangosd_SkillGain_Defense: ${RATE_SKILL_GAIN:-1}
+
+      # --- Anticheat / Warden ---
+      Anticheat_Enable: ${ANTICHEAT_ENABLED:-1}
+      Anticheat_Warden_Enable: ${WARDEN_ENABLED:-0}
+
+      # --- Auction House Bot ---
+      Mangosd_AuctionHouseBot_Chance_Sell: ${AHBOT_CHANCE_SELL:-10}
+      Mangosd_AuctionHouseBot_Chance_Buy: ${AHBOT_CHANCE_BUY:-10}
+      Mangosd_AuctionHouseBot_Level_MaxRequired: ${AHBOT_MAX_REQUIRED_LEVEL:-60}
+
+      # --- Playerbots ---
+      PlayerBots_AiPlayerbot_Enabled: ${PLAYERBOTS_ENABLED:-1}
+      PlayerBots_AiPlayerbot_RandomBotAutoCreate: ${PLAYERBOTS_AUTO_CREATE_ACCOUNTS:-1}
+      PlayerBots_AiPlayerbot_RandomBotAccountCount: ${PLAYERBOTS_ACCOUNT_COUNT:-50}
+      PlayerBots_AiPlayerbot_MinRandomBots: ${PLAYERBOTS_MIN_RANDOM_BOTS:-0}
+      PlayerBots_AiPlayerbot_MaxRandomBots: ${PLAYERBOTS_MAX_RANDOM_BOTS:-0}
+      PlayerBots_AiPlayerbot_RandomBotMinLevel: ${PLAYERBOTS_MIN_LEVEL:-1}
+      PlayerBots_AiPlayerbot_RandomBotMaxLevel: ${PLAYERBOTS_MAX_LEVEL:-60}
+    ports:
+      - "${REALM_PORT:-8085}:8085"
+    volumes:
+      - ./data:/opt/cmangos/data:ro
+      - ./config:/opt/cmangos/etc
+      - ./logs:/opt/cmangos/logs
+
+volumes:
+  db-data:
