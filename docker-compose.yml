@@ -145,6 +145,46 @@ services:
       Mangosd_StartPlayerLevel: ${START_PLAYER_LEVEL:-1}
       Mangosd_StartPlayerMoney: ${START_PLAYER_MONEY:-0}
       Mangosd_AllowTwoSide_Accounts: ${ALLOW_TWO_SIDE_ACCOUNTS:-0}
+      Mangosd_CharactersPerRealm: ${CHARACTERS_PER_REALM:-10}
+      Mangosd_MaxPrimaryTradeSkill: ${MAX_PRIMARY_PROFESSIONS:-2}
+      Mangosd_SkipCinematics: ${SKIP_CINEMATICS:-0}
+      Mangosd_AllFlightPaths: ${ALL_FLIGHT_PATHS:-0}
+      Mangosd_AlwaysMaxSkillForLevel: ${ALWAYS_MAX_WEAPON_SKILL:-0}
+      Mangosd_Death_SicknessLevel: ${DEATH_SICKNESS_LEVEL:-11}
+      Mangosd_MailDeliveryDelay: ${MAIL_DELIVERY_DELAY:-3600}
+      Mangosd_PlayerSave_Interval: ${PLAYER_SAVE_INTERVAL:-900000}
+
+      # --- Cross-faction (e.g. grouping with bots of the other faction) ---
+      Mangosd_AllowTwoSide_Interaction_Chat: ${ALLOW_TWO_SIDE_INTERACTION:-0}
+      Mangosd_AllowTwoSide_Interaction_Channel: ${ALLOW_TWO_SIDE_INTERACTION:-0}
+      Mangosd_AllowTwoSide_Interaction_Group: ${ALLOW_TWO_SIDE_INTERACTION:-0}
+      Mangosd_AllowTwoSide_Interaction_Guild: ${ALLOW_TWO_SIDE_INTERACTION:-0}
+      Mangosd_AllowTwoSide_Interaction_Trade: ${ALLOW_TWO_SIDE_INTERACTION:-0}
+      Mangosd_AllowTwoSide_Interaction_Auction: ${ALLOW_TWO_SIDE_INTERACTION:-0}
+      Mangosd_AllowTwoSide_Interaction_Mail: ${ALLOW_TWO_SIDE_INTERACTION:-0}
+
+      # --- Instances ---
+      Mangosd_Instance_IgnoreLevel: ${INSTANCE_IGNORE_LEVEL:-0}
+      Mangosd_Instance_IgnoreRaid: ${INSTANCE_IGNORE_RAID:-0}
+      Mangosd_Quests_IgnoreRaid: ${QUESTS_IGNORE_RAID:-0}
+      Mangosd_Rate_InstanceResetTime: ${RATE_INSTANCE_RESET_TIME:-1}
+
+      # --- Difficulty: creature health / damage multipliers ---
+      Mangosd_Rate_Creature_Normal_HP: ${RATE_CREATURE_NORMAL_HP:-1}
+      Mangosd_Rate_Creature_Elite_RARE_HP: ${RATE_CREATURE_NORMAL_HP:-1}
+      Mangosd_Rate_Creature_Normal_Damage: ${RATE_CREATURE_NORMAL_DAMAGE:-1}
+      Mangosd_Rate_Creature_Elite_RARE_Damage: ${RATE_CREATURE_NORMAL_DAMAGE:-1}
+      Mangosd_Rate_Creature_Normal_SpellDamage: ${RATE_CREATURE_NORMAL_DAMAGE:-1}
+      Mangosd_Rate_Creature_Elite_RARE_SpellDamage: ${RATE_CREATURE_NORMAL_DAMAGE:-1}
+      Mangosd_Rate_Creature_Elite_Elite_HP: ${RATE_CREATURE_ELITE_HP:-1}
+      Mangosd_Rate_Creature_Elite_RAREELITE_HP: ${RATE_CREATURE_ELITE_HP:-1}
+      Mangosd_Rate_Creature_Elite_WORLDBOSS_HP: ${RATE_CREATURE_ELITE_HP:-1}
+      Mangosd_Rate_Creature_Elite_Elite_Damage: ${RATE_CREATURE_ELITE_DAMAGE:-1}
+      Mangosd_Rate_Creature_Elite_RAREELITE_Damage: ${RATE_CREATURE_ELITE_DAMAGE:-1}
+      Mangosd_Rate_Creature_Elite_WORLDBOSS_Damage: ${RATE_CREATURE_ELITE_DAMAGE:-1}
+      Mangosd_Rate_Creature_Elite_Elite_SpellDamage: ${RATE_CREATURE_ELITE_DAMAGE:-1}
+      Mangosd_Rate_Creature_Elite_RAREELITE_SpellDamage: ${RATE_CREATURE_ELITE_DAMAGE:-1}
+      Mangosd_Rate_Creature_Elite_WORLDBOSS_SpellDamage: ${RATE_CREATURE_ELITE_DAMAGE:-1}
 
       # --- Rates ---
       Mangosd_Rate_XP_Kill: ${RATE_XP_KILL:-1}
@@ -165,6 +205,8 @@ services:
       Mangosd_SkillGain_Gathering: ${RATE_SKILL_GAIN:-1}
       Mangosd_SkillGain_Weapon: ${RATE_SKILL_GAIN:-1}
       Mangosd_SkillGain_Defense: ${RATE_SKILL_GAIN:-1}
+      Mangosd_Rate_Talent: ${RATE_TALENT:-1}
+      Mangosd_Rate_Pet_XP_Kill: ${RATE_PET_XP:-1}
 
       # --- Anticheat / Warden ---
       Anticheat_Enable: ${ANTICHEAT_ENABLED:-1}
@@ -183,6 +225,13 @@ services:
       PlayerBots_AiPlayerbot_MaxRandomBots: ${PLAYERBOTS_MAX_RANDOM_BOTS:-0}
       PlayerBots_AiPlayerbot_RandomBotMinLevel: ${PLAYERBOTS_MIN_LEVEL:-1}
       PlayerBots_AiPlayerbot_RandomBotMaxLevel: ${PLAYERBOTS_MAX_LEVEL:-60}
+      PlayerBots_AiPlayerbot_RandomBotJoinLfg: ${PLAYERBOTS_JOIN_LFG:-1}
+      PlayerBots_AiPlayerbot_RandomBotJoinBG: ${PLAYERBOTS_JOIN_BG:-1}
+      PlayerBots_AiPlayerbot_BotAutologin: ${PLAYERBOTS_ALTS_AUTOLOGIN:-0}
+      PlayerBots_AiPlayerbot_AutoLearnTrainerSpells: ${PLAYERBOTS_AUTO_LEARN_TRAINER_SPELLS:-0}
+      PlayerBots_AiPlayerbot_AutoLearnQuestSpells: ${PLAYERBOTS_AUTO_LEARN_QUEST_SPELLS:-0}
+      PlayerBots_AiPlayerbot_AutoEquipUpgradeLoot: ${PLAYERBOTS_AUTO_EQUIP_UPGRADES:-1}
+      PlayerBots_AiPlayerbot_SyncQuestWithPlayer: ${PLAYERBOTS_SYNC_QUESTS:-0}
     ports:
       - "${REALM_PORT:-8085}:8085"
     volumes:
