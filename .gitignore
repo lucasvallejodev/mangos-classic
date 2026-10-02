@@ -96,4 +96,23 @@ cmake_install.cmake
 #
 # Module files
 #
-src/modules/
+src/modules/*
+!src/modules/PlayerBots/
+
+#
+# World of Warcraft extracted data
+#
+data/
+#
+# Docker
+#
+!.dockerignore
+!.env.example
+/config/
+/logs/
+
+#
+# Vendored classic-db (see VENDORED.md)
+#
+!contrib/classic-db/Full_DB/*.sql.gz
+contrib/classic-db/InstallFullDB.config

@@ -25,6 +25,11 @@ endif()
 if(BUILD_PLAYERBOTS)
   include(FetchContent)
 
+  # Use the vendored copy when present instead of cloning from GitHub (see VENDORED.md)
+  if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/modules/PlayerBots/CMakeLists.txt" AND NOT FETCHCONTENT_SOURCE_DIR_PLAYERBOTS)
+    set(FETCHCONTENT_SOURCE_DIR_PLAYERBOTS "${CMAKE_CURRENT_SOURCE_DIR}/modules/PlayerBots")
+  endif()
+
   FetchContent_Declare(
     PlayerBots
     SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/modules/PlayerBots"
