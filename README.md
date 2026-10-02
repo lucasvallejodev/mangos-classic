@@ -76,7 +76,7 @@ This fork includes a Docker setup with the Auction House Bot and Playerbots enab
    ```
    ```
    account create <name> <password>
-   account set gmlevel <name> 3
+   account set gmlevel <name> 3 -1
    ```
    Detach with **Ctrl-P Ctrl-Q**. Ctrl-C stops the server.
 6. In your client's `realmlist.wtf`, set `set realmlist <REALM_ADDRESS>`.
