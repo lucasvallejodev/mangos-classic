@@ -116,3 +116,8 @@ data/
 #
 !contrib/classic-db/Full_DB/*.sql.gz
 contrib/classic-db/InstallFullDB.config
+
+#
+# Vendored zlib (see VENDORED.md)
+#
+!/dep/zlib/**

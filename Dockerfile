@@ -35,8 +35,13 @@ ARG BUILD_JOBS=0
 ENV CCACHE_DIR=/ccache \
     CCACHE_SLOPPINESS=pch_defines,time_macros,include_file_mtime,include_file_ctime
 
-# FETCHCONTENT_FULLY_DISCONNECTED guarantees CMake never tries to download the Playerbots module.
+# FETCHCONTENT_FULLY_DISCONNECTED guarantees CMake never downloads anything: Playerbots and zlib
+# are vendored (src/modules/PlayerBots, dep/zlib).
 RUN --mount=type=cache,target=/ccache,id=cmangos-classic-ccache \
+    set -e; \
+    JOBS="${BUILD_JOBS:-0}"; \
+    if [ "${JOBS}" -le 0 ] 2>/dev/null || [ -z "${JOBS}" ]; then JOBS="$(nproc)"; fi; \
+    echo "Building with ${JOBS} parallel jobs"; \
     cmake -S /src -B /build \
       -DCMAKE_BUILD_TYPE=Release \
       -DCMAKE_INSTALL_PREFIX=/opt/cmangos \
@@ -49,13 +54,13 @@ RUN --mount=type=cache,target=/ccache,id=cmangos-classic-ccache \
       -DBUILD_EXTRACTORS=OFF \
       -DFETCHCONTENT_FULLY_DISCONNECTED=ON \
       -DFETCHCONTENT_SOURCE_DIR_PLAYERBOTS=/src/src/modules/PlayerBots \
- && JOBS="${BUILD_JOBS}"; [ "${JOBS}" -gt 0 ] || JOBS="$(nproc)"; \
-    cmake --build /build --parallel "${JOBS}" \
- && cmake --install /build \
- && if [ ! -f /opt/cmangos/etc/aiplayerbot.conf.dist ]; then \
+      -DFETCHCONTENT_SOURCE_DIR_ZLIB=/src/dep/zlib; \
+    cmake --build /build --parallel "${JOBS}"; \
+    cmake --install /build; \
+    if [ ! -f /opt/cmangos/etc/aiplayerbot.conf.dist ]; then \
       cp /src/src/modules/PlayerBots/playerbot/aiplayerbot.conf.dist.in /opt/cmangos/etc/aiplayerbot.conf.dist; \
-    fi \
- && rm -rf /build
+    fi; \
+    rm -rf /build
 
 ############################################################
 # Database installer

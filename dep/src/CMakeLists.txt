@@ -27,6 +27,10 @@ endif()
 # zlib
 find_package(ZLIB CONFIG COMPONENTS static)
 if (NOT ZLIB_FOUND OR ZLIB_VERSION_STRING VERSION_LESS 1.3.2)
+  # Use the vendored copy when present instead of cloning from GitHub (see VENDORED.md)
+  if(EXISTS "${CMAKE_SOURCE_DIR}/dep/zlib/CMakeLists.txt" AND NOT FETCHCONTENT_SOURCE_DIR_ZLIB)
+    set(FETCHCONTENT_SOURCE_DIR_ZLIB "${CMAKE_SOURCE_DIR}/dep/zlib")
+  endif()
   FetchContent_Declare(
     zlib
     GIT_REPOSITORY "https://github.com/madler/zlib.git"

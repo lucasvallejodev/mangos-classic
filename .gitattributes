@@ -24,3 +24,4 @@ docker/*.sh  eol=lf
 # Vendored third-party sources (see VENDORED.md): keep them byte-identical to upstream
 src/modules/PlayerBots/**    -text -whitespace
 contrib/classic-db/**        -text -whitespace
+dep/zlib/**                  -text -whitespace
