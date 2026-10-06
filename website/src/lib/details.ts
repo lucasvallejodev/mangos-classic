@@ -28,6 +28,20 @@ const SKILL_CATEGORIES: [number, string][] = [
 ];
 const AUCTION_RESULTS = ["Outbid on", "Auction won:", "Auction successful:", "Auction expired:", "Auction cancelled:", "Auction cancelled:"];
 
+// SkillLine.dbc only carries a placeholder icon ("temp") for most 1.12 skills
+const SKILL_ICONS: Dict<string> = {
+  171: "trade_alchemy", 164: "trade_blacksmithing", 333: "trade_engraving", 202: "trade_engineering",
+  182: "trade_herbalism", 165: "trade_leatherworking", 186: "trade_mining", 393: "inv_misc_pelt_wolf_01",
+  197: "trade_tailoring", 185: "inv_misc_food_15", 129: "spell_holy_sealofsacrifice", 356: "trade_fishing",
+  43: "inv_sword_04", 55: "inv_sword_27", 44: "inv_axe_01", 172: "inv_axe_09", 54: "inv_mace_01", 160: "inv_hammer_05",
+  136: "inv_staff_08", 229: "inv_spear_06", 173: "inv_weapon_shortblade_05", 45: "inv_weapon_bow_05",
+  46: "inv_weapon_rifle_01", 226: "inv_weapon_crossbow_01", 176: "inv_throwingknife_02", 228: "inv_wand_01",
+  473: "inv_gauntlets_04", 162: "ability_meleedamage", 118: "ability_dualwield", 95: "ability_defend",
+  415: "inv_chest_cloth_21", 414: "inv_chest_leather_09", 413: "inv_chest_chain_05", 293: "inv_chest_plate01", 433: "inv_shield_04",
+};
+// by category: languages, riding and racials
+const SKILL_CATEGORY_ICONS: Dict<string> = { 10: "inv_misc_note_01", 9: "ability_mount_ridinghorse", 7: "inv_misc_book_09" };
+
 // Reputation ranks, lowest first, with the number of points each one spans (ReputationMgr::PointsInRank)
 const REP_RANKS: [string, number][] = [
   ["Hated", 36000], ["Hostile", 3000], ["Unfriendly", 3000], ["Neutral", 3000],
@@ -153,7 +167,12 @@ export async function getCharacterDetails(guid: number) {
   const skills = SKILL_CATEGORIES.map(([category, title]) => ({
     title,
     skills: file.skills
-      .map((s) => ({ ...(skillLines as Dict<{ name: string; category: number }>)[n(s.skill)], value: n(s.value), max: n(s.max) }))
+      .map((s) => {
+        const line = (skillLines as Dict<{ name: string; category: number; icon: string | null }>)[n(s.skill)];
+        const dbc = line?.icon && line.icon !== "temp" ? line.icon : null;
+        const icon = SKILL_ICONS[n(s.skill)] ?? dbc ?? SKILL_CATEGORY_ICONS[line?.category] ?? null;
+        return { ...line, icon, value: n(s.value), max: n(s.max) };
+      })
       .filter((s) => s.category === category && s.name)
       .sort((a, b) => a.name.localeCompare(b.name)),
   })).filter((g) => g.skills.length);

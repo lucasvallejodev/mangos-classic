@@ -45,17 +45,19 @@ const save = (name, data) => {
 const iconName = (path) => path.split("\\").pop().toLowerCase();
 const range = (r, from, n) => Array.from({ length: n }, (_, i) => r.u32(from + i) | 0);
 
+// SpellIcon.dbc: 1 texture path
+const spellIcons = table("SpellIcon.dbc", (r) => iconName(r.str(1)) || undefined);
+
 const report = [
-  // SkillLine.dbc: 1 category, 3 name
-  save("skills.json", table("SkillLine.dbc", (r) => ({ name: r.str(3), category: r.u32(1) }))),
+  // SkillLine.dbc: 1 category, 3 name, 21 spell icon
+  save("skills.json", table("SkillLine.dbc", (r) => ({ name: r.str(3), category: r.u32(1), icon: spellIcons[r.u32(21)] ?? null }))),
   // Faction.dbc: 1 reputation list id (-1 = no reputation), 2-5 race masks, 6-9 class masks, 10-13 base values, 19 name
   save("factions.json", table("Faction.dbc", (r) =>
     (r.u32(1) | 0) < 0 ? undefined
       : { name: r.str(19), raceMask: range(r, 2, 4), classMask: range(r, 6, 4), base: range(r, 10, 4) })),
   // ItemDisplayInfo.dbc: 5 inventory icon
   save("item-icons.json", table("ItemDisplayInfo.dbc", (r) => r.str(5).toLowerCase() || undefined)),
-  // SpellIcon.dbc: 1 texture path
-  save("spell-icons.json", table("SpellIcon.dbc", (r) => iconName(r.str(1)) || undefined)),
+  save("spell-icons.json", spellIcons),
   // SpellItemEnchantment.dbc: 13 name
   save("enchants.json", table("SpellItemEnchantment.dbc", (r) => r.str(13) || undefined)),
   // ItemRandomProperties.dbc: 7 name suffix
