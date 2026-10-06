@@ -11,7 +11,8 @@ WORKDIR /app
 ENV NEXT_TELEMETRY_DISABLED=1
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN npm run build
+# public/ only holds the git-ignored icons, so it does not exist in a fresh clone
+RUN mkdir -p public && npm run build
 
 FROM node:24-alpine AS runtime
 WORKDIR /app
