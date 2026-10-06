@@ -1,0 +1,881 @@
+{
+ "format": "cmangos-classic-character",
+ "version": 1,
+ "source": {
+  "core": "cmangos-classic",
+  "characterDbVersion": "required_z2819_01_characters_item_instance_text_id_fix",
+  "exportedAt": 1791320504,
+  "originalGuid": 452
+ },
+ "character": {
+  "name": "Marta",
+  "race": 1,
+  "class": 5,
+  "gender": 1,
+  "level": 3,
+  "xp": 36,
+  "money": 33,
+  "appearance": {
+   "skin": 0,
+   "face": 0,
+   "hairStyle": 0,
+   "hairColor": 0,
+   "facialHair": 0
+  },
+  "bankBagSlots": 0,
+  "playerBytes": 0,
+  "playerBytes2": 33554432,
+  "playerFlags": 1,
+  "position": {
+   "map": 0,
+   "zone": 12,
+   "x": -9517.53,
+   "y": 27.7196,
+   "z": 57.8302,
+   "o": 5.00807
+  },
+  "played": {
+   "total": 2719,
+   "level": 616
+  },
+  "rest": {
+   "bonus": 6.57908,
+   "isLogoutResting": 0,
+   "logoutTime": 1790986438
+  },
+  "talentReset": {
+   "cost": 0,
+   "time": 0
+  },
+  "taxi": {
+   "mask": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "path": ""
+  },
+  "exploredZones": [
+   0,
+   128,
+   294912,
+   1644167168,
+   16777856,
+   0,
+   134217736,
+   0,
+   4,
+   0,
+   218103808,
+   0,
+   0,
+   0,
+   0,
+   0,
+   16,
+   16,
+   0,
+   1024,
+   0,
+   0,
+   11520,
+   0,
+   256,
+   4,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "honor": {
+   "highestRank": 0,
+   "standing": 0,
+   "storedRating": 0,
+   "storedDishonorableKills": 0,
+   "storedHonorableKills": 0
+  },
+  "vitals": {
+   "health": 72,
+   "powers": [
+    269,
+    0,
+    0,
+    100,
+    0
+   ]
+  },
+  "ammoId": 0,
+  "actionBars": 0,
+  "stableSlots": 0,
+  "watchedFaction": 4294967295,
+  "drunk": 0,
+  "fishingSteps": 0,
+  "cinematic": 1,
+  "extraFlags": 6,
+  "atLogin": 0,
+  "deathExpireTime": 1790985017,
+  "homebind": {
+   "map": 0,
+   "zone": 12,
+   "x": -8949.95,
+   "y": -132.493,
+   "z": 83.5312
+  }
+ },
+ "skills": [
+  {
+   "skill": 54,
+   "value": 3,
+   "max": 15
+  },
+  {
+   "skill": 56,
+   "value": 15,
+   "max": 15
+  },
+  {
+   "skill": 78,
+   "value": 15,
+   "max": 15
+  },
+  {
+   "skill": 95,
+   "value": 6,
+   "max": 15
+  },
+  {
+   "skill": 98,
+   "value": 300,
+   "max": 300
+  },
+  {
+   "skill": 162,
+   "value": 1,
+   "max": 15
+  },
+  {
+   "skill": 228,
+   "value": 1,
+   "max": 15
+  },
+  {
+   "skill": 415,
+   "value": 1,
+   "max": 1
+  },
+  {
+   "skill": 613,
+   "value": 15,
+   "max": 15
+  },
+  {
+   "skill": 754,
+   "value": 15,
+   "max": 15
+  }
+ ],
+ "forgottenSkills": [],
+ "spells": [],
+ "spellCooldowns": [],
+ "actions": [
+  {
+   "button": 0,
+   "action": 6603,
+   "type": 0
+  },
+  {
+   "button": 1,
+   "action": 585,
+   "type": 0
+  },
+  {
+   "button": 2,
+   "action": 2050,
+   "type": 0
+  },
+  {
+   "button": 10,
+   "action": 159,
+   "type": 128
+  },
+  {
+   "button": 11,
+   "action": 2070,
+   "type": 128
+  }
+ ],
+ "auras": [],
+ "reputation": [
+  {
+   "faction": 21,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 46,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 47,
+   "standing": 108,
+   "flags": 17
+  },
+  {
+   "faction": 54,
+   "standing": 108,
+   "flags": 17
+  },
+  {
+   "faction": 59,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 67,
+   "standing": 0,
+   "flags": 14
+  },
+  {
+   "faction": 68,
+   "standing": 0,
+   "flags": 6
+  },
+  {
+   "faction": 69,
+   "standing": 108,
+   "flags": 17
+  },
+  {
+   "faction": 70,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 72,
+   "standing": 439,
+   "flags": 17
+  },
+  {
+   "faction": 76,
+   "standing": 0,
+   "flags": 6
+  },
+  {
+   "faction": 81,
+   "standing": 0,
+   "flags": 6
+  },
+  {
+   "faction": 83,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 86,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 87,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 92,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 93,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 169,
+   "standing": 0,
+   "flags": 8
+  },
+  {
+   "faction": 270,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 289,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 349,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 369,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 469,
+   "standing": 0,
+   "flags": 9
+  },
+  {
+   "faction": 470,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 471,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 509,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 510,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 529,
+   "standing": 0,
+   "flags": 1
+  },
+  {
+   "faction": 530,
+   "standing": 0,
+   "flags": 6
+  },
+  {
+   "faction": 549,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 550,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 551,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 569,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 570,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 571,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 574,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 576,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 577,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 589,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 609,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 629,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 630,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 709,
+   "standing": 0,
+   "flags": 20
+  },
+  {
+   "faction": 729,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 730,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 749,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 789,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 809,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 889,
+   "standing": 0,
+   "flags": 6
+  },
+  {
+   "faction": 890,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 891,
+   "standing": 0,
+   "flags": 24
+  },
+  {
+   "faction": 892,
+   "standing": 0,
+   "flags": 14
+  },
+  {
+   "faction": 909,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 910,
+   "standing": 0,
+   "flags": 2
+  }
+ ],
+ "quests": [
+  {
+   "quest": 7,
+   "status": 1,
+   "rewarded": 1,
+   "explored": 0,
+   "timer": 1790951643,
+   "mobcount1": 10,
+   "mobcount2": 0,
+   "mobcount3": 0,
+   "mobcount4": 0,
+   "itemcount1": 0,
+   "itemcount2": 0,
+   "itemcount3": 0,
+   "itemcount4": 0
+  },
+  {
+   "quest": 15,
+   "status": 3,
+   "rewarded": 0,
+   "explored": 0,
+   "timer": 1790951643,
+   "mobcount1": 0,
+   "mobcount2": 0,
+   "mobcount3": 0,
+   "mobcount4": 0,
+   "itemcount1": 0,
+   "itemcount2": 0,
+   "itemcount3": 0,
+   "itemcount4": 0
+  },
+  {
+   "quest": 18,
+   "status": 3,
+   "rewarded": 0,
+   "explored": 0,
+   "timer": 1790986438,
+   "mobcount1": 0,
+   "mobcount2": 0,
+   "mobcount3": 0,
+   "mobcount4": 0,
+   "itemcount1": 0,
+   "itemcount2": 0,
+   "itemcount3": 0,
+   "itemcount4": 0
+  },
+  {
+   "quest": 33,
+   "status": 3,
+   "rewarded": 0,
+   "explored": 0,
+   "timer": 1790986438,
+   "mobcount1": 0,
+   "mobcount2": 0,
+   "mobcount3": 0,
+   "mobcount4": 0,
+   "itemcount1": 0,
+   "itemcount2": 0,
+   "itemcount3": 0,
+   "itemcount4": 0
+  },
+  {
+   "quest": 783,
+   "status": 1,
+   "rewarded": 1,
+   "explored": 0,
+   "timer": 1790951643,
+   "mobcount1": 0,
+   "mobcount2": 0,
+   "mobcount3": 0,
+   "mobcount4": 0,
+   "itemcount1": 0,
+   "itemcount2": 0,
+   "itemcount3": 0,
+   "itemcount4": 0
+  },
+  {
+   "quest": 3103,
+   "status": 1,
+   "rewarded": 0,
+   "explored": 0,
+   "timer": 1790986438,
+   "mobcount1": 0,
+   "mobcount2": 0,
+   "mobcount3": 0,
+   "mobcount4": 0,
+   "itemcount1": 1,
+   "itemcount2": 0,
+   "itemcount3": 0,
+   "itemcount4": 0
+  },
+  {
+   "quest": 5261,
+   "status": 1,
+   "rewarded": 1,
+   "explored": 0,
+   "timer": 1790951643,
+   "mobcount1": 0,
+   "mobcount2": 0,
+   "mobcount3": 0,
+   "mobcount4": 0,
+   "itemcount1": 0,
+   "itemcount2": 0,
+   "itemcount3": 0,
+   "itemcount4": 0
+  }
+ ],
+ "questsWeekly": [],
+ "honorCp": [],
+ "items": [
+  {
+   "ref": 7055,
+   "entry": 6098,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 24,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 7057,
+   "entry": 52,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 17,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 7059,
+   "entry": 53,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 7061,
+   "entry": 51,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 7063,
+   "entry": 36,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 13,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 7065,
+   "entry": 159,
+   "count": 5,
+   "duration": 0,
+   "charges": [
+    -1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 7067,
+   "entry": 2070,
+   "count": 5,
+   "duration": 0,
+   "charges": [
+    -1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 7069,
+   "entry": 6948,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 7418,
+   "entry": 9548,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  }
+ ],
+ "inventory": [
+  {
+   "bag": null,
+   "slot": 3,
+   "item": 7059
+  },
+  {
+   "bag": null,
+   "slot": 4,
+   "item": 7055
+  },
+  {
+   "bag": null,
+   "slot": 6,
+   "item": 7057
+  },
+  {
+   "bag": null,
+   "slot": 7,
+   "item": 7061
+  },
+  {
+   "bag": null,
+   "slot": 15,
+   "item": 7063
+  },
+  {
+   "bag": null,
+   "slot": 23,
+   "item": 7065
+  },
+  {
+   "bag": null,
+   "slot": 24,
+   "item": 7067
+  },
+  {
+   "bag": null,
+   "slot": 25,
+   "item": 7069
+  },
+  {
+   "bag": null,
+   "slot": 26,
+   "item": 7418
+  }
+ ],
+ "pets": [],
+ "mail": [],
+ "display": {
+  "guild": null,
+  "stats": null
+ }
+}

@@ -1,0 +1,3110 @@
+{
+ "format": "cmangos-classic-character",
+ "version": 1,
+ "source": {
+  "core": "cmangos-classic",
+  "characterDbVersion": "required_z2819_01_characters_item_instance_text_id_fix",
+  "exportedAt": 1791320507,
+  "originalGuid": 2302
+ },
+ "character": {
+  "name": "Nanmo",
+  "race": 6,
+  "class": 3,
+  "gender": 1,
+  "level": 60,
+  "xp": 0,
+  "money": 530756,
+  "appearance": {
+   "skin": 6,
+   "face": 2,
+   "hairStyle": 2,
+   "hairColor": 0,
+   "facialHair": 0
+  },
+  "bankBagSlots": 0,
+  "playerBytes": 131590,
+  "playerBytes2": 33554432,
+  "playerFlags": 2,
+  "position": {
+   "map": 0,
+   "zone": 33,
+   "x": -14377.6,
+   "y": 382.544,
+   "z": 23.4508,
+   "o": 0
+  },
+  "played": {
+   "total": 2177,
+   "level": 2177
+  },
+  "rest": {
+   "bonus": 0,
+   "isLogoutResting": 0,
+   "logoutTime": 1791019432
+  },
+  "talentReset": {
+   "cost": 0,
+   "time": 0
+  },
+  "taxi": {
+   "mask": [
+    830019333,
+    315656872,
+    1104048,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "path": ""
+  },
+  "exploredZones": [
+   0,
+   0,
+   0,
+   2147483648,
+   16384,
+   524288,
+   0,
+   0,
+   262144,
+   0,
+   0,
+   0,
+   8388608,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2097152,
+   0,
+   0,
+   8,
+   0,
+   0,
+   0,
+   262144,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "honor": {
+   "highestRank": 0,
+   "standing": 0,
+   "storedRating": 0,
+   "storedDishonorableKills": 0,
+   "storedHonorableKills": 0
+  },
+  "vitals": {
+   "health": 4544,
+   "powers": [
+    2850,
+    0,
+    0,
+    100,
+    0
+   ]
+  },
+  "ammoId": 11285,
+  "actionBars": 0,
+  "stableSlots": 0,
+  "watchedFaction": 4294967295,
+  "drunk": 0,
+  "fishingSteps": 0,
+  "cinematic": 2,
+  "extraFlags": 12,
+  "atLogin": 0,
+  "deathExpireTime": 0,
+  "homebind": {
+   "map": 1,
+   "zone": 1637,
+   "x": 1667.64,
+   "y": -4346.96,
+   "z": 61.5564
+  }
+ },
+ "skills": [
+  {
+   "skill": 43,
+   "value": 295,
+   "max": 300
+  },
+  {
+   "skill": 44,
+   "value": 300,
+   "max": 300
+  },
+  {
+   "skill": 45,
+   "value": 263,
+   "max": 300
+  },
+  {
+   "skill": 46,
+   "value": 300,
+   "max": 300
+  },
+  {
+   "skill": 50,
+   "value": 300,
+   "max": 300
+  },
+  {
+   "skill": 51,
+   "value": 300,
+   "max": 300
+  },
+  {
+   "skill": 55,
+   "value": 290,
+   "max": 300
+  },
+  {
+   "skill": 95,
+   "value": 300,
+   "max": 300
+  },
+  {
+   "skill": 109,
+   "value": 300,
+   "max": 300
+  },
+  {
+   "skill": 115,
+   "value": 300,
+   "max": 300
+  },
+  {
+   "skill": 118,
+   "value": 300,
+   "max": 300
+  },
+  {
+   "skill": 124,
+   "value": 300,
+   "max": 300
+  },
+  {
+   "skill": 129,
+   "value": 241,
+   "max": 150
+  },
+  {
+   "skill": 136,
+   "value": 248,
+   "max": 300
+  },
+  {
+   "skill": 162,
+   "value": 300,
+   "max": 300
+  },
+  {
+   "skill": 163,
+   "value": 300,
+   "max": 300
+  },
+  {
+   "skill": 165,
+   "value": 274,
+   "max": 300
+  },
+  {
+   "skill": 172,
+   "value": 300,
+   "max": 300
+  },
+  {
+   "skill": 173,
+   "value": 267,
+   "max": 300
+  },
+  {
+   "skill": 176,
+   "value": 286,
+   "max": 300
+  },
+  {
+   "skill": 185,
+   "value": 289,
+   "max": 150
+  },
+  {
+   "skill": 202,
+   "value": 275,
+   "max": 300
+  },
+  {
+   "skill": 226,
+   "value": 274,
+   "max": 300
+  },
+  {
+   "skill": 229,
+   "value": 251,
+   "max": 300
+  },
+  {
+   "skill": 356,
+   "value": 240,
+   "max": 150
+  },
+  {
+   "skill": 413,
+   "value": 1,
+   "max": 1
+  },
+  {
+   "skill": 414,
+   "value": 1,
+   "max": 1
+  },
+  {
+   "skill": 415,
+   "value": 1,
+   "max": 1
+  },
+  {
+   "skill": 473,
+   "value": 265,
+   "max": 300
+  },
+  {
+   "skill": 762,
+   "value": 75,
+   "max": 75
+  }
+ ],
+ "forgottenSkills": [],
+ "spells": [
+  {
+   "spell": 883,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 982,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 1002,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 1462,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 1494,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 1515,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 1543,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2153,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2154,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2155,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2159,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2160,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2161,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2162,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2165,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2166,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2167,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2168,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2539,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2541,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2544,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2546,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2551,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 2641,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3045,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3102,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3127,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3274,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3276,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3277,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3278,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3279,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3280,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3412,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3753,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3756,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3759,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3760,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3761,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3763,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3764,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3766,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3768,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3770,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3774,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3776,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3780,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3812,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3816,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3817,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3818,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3922,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3923,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3924,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3925,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3926,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3929,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3930,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3931,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3932,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3934,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3936,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3937,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3938,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3941,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3942,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3945,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3946,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3947,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3949,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3950,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3953,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3955,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3956,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3958,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3961,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3962,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3963,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3964,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3965,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3967,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3973,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3977,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 3978,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 4039,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 4040,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 4041,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 4094,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 5116,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 5118,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 5149,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 5384,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 6197,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 6458,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 6461,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 6463,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 6499,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 6500,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 6661,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 6991,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 7135,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 7147,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 7151,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 7156,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 7430,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 7731,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 7733,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 7734,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 7928,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 7934,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 8334,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 8895,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 9060,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 9062,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 9065,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 9068,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 9074,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 9145,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 9193,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 9194,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 9196,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 9198,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 9201,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 9206,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 9271,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10482,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10487,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10499,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10507,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10511,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10518,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10548,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10552,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10556,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10558,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10619,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10621,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10630,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10632,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10647,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10650,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10662,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10663,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 10841,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12584,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12585,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12586,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12589,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12590,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12591,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12594,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12595,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12596,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12599,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12603,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12618,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12619,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12621,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12622,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12656,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12657,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12715,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12716,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12717,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12718,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12754,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12755,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12758,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12759,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12760,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12895,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12897,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12899,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12902,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12903,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12905,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12906,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12907,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 12908,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 13159,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 13161,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 13163,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 13240,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 13544,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 13809,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14266,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14268,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14271,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14273,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14277,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14280,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14287,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14295,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14305,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14311,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14317,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14325,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14327,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14930,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 14932,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 15255,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 15632,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 18990,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19047,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19058,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19153,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19235,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19245,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19258,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19263,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19373,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19415,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19416,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19431,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19490,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19500,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19503,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19567,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19788,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19790,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19791,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19878,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19879,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19880,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19882,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19883,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19884,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 19885,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 20190,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 20648,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 20649,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 20650,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 20904,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 20910,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 21175,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 22331,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 23070,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 23247,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 24283,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 24295,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 24297,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 25294,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 25295,
+   "active": 1,
+   "disabled": 0
+  },
+  {
+   "spell": 25296,
+   "active": 1,
+   "disabled": 0
+  }
+ ],
+ "spellCooldowns": [],
+ "actions": [
+  {
+   "button": 0,
+   "action": 6603,
+   "type": 0
+  },
+  {
+   "button": 1,
+   "action": 2973,
+   "type": 0
+  },
+  {
+   "button": 2,
+   "action": 75,
+   "type": 0
+  },
+  {
+   "button": 3,
+   "action": 20549,
+   "type": 0
+  },
+  {
+   "button": 10,
+   "action": 159,
+   "type": 128
+  },
+  {
+   "button": 11,
+   "action": 117,
+   "type": 128
+  }
+ ],
+ "auras": [
+  {
+   "caster_guid": 2302,
+   "item_guid": 0,
+   "spell": 25296,
+   "stackcount": 1,
+   "remaincharges": 0,
+   "basepoints0": 120,
+   "basepoints1": 0,
+   "basepoints2": 0,
+   "periodictime0": 0,
+   "periodictime1": 0,
+   "periodictime2": 0,
+   "maxduration": -1,
+   "remaintime": -1,
+   "effIndexMask": 3
+  }
+ ],
+ "reputation": [
+  {
+   "faction": 21,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 46,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 47,
+   "standing": 0,
+   "flags": 6
+  },
+  {
+   "faction": 54,
+   "standing": 0,
+   "flags": 6
+  },
+  {
+   "faction": 59,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 67,
+   "standing": 0,
+   "flags": 9
+  },
+  {
+   "faction": 68,
+   "standing": 0,
+   "flags": 17
+  },
+  {
+   "faction": 69,
+   "standing": 0,
+   "flags": 6
+  },
+  {
+   "faction": 70,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 72,
+   "standing": 0,
+   "flags": 6
+  },
+  {
+   "faction": 76,
+   "standing": 0,
+   "flags": 17
+  },
+  {
+   "faction": 81,
+   "standing": 0,
+   "flags": 17
+  },
+  {
+   "faction": 83,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 86,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 87,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 92,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 93,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 169,
+   "standing": 0,
+   "flags": 8
+  },
+  {
+   "faction": 270,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 289,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 349,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 369,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 469,
+   "standing": 0,
+   "flags": 14
+  },
+  {
+   "faction": 470,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 471,
+   "standing": 0,
+   "flags": 22
+  },
+  {
+   "faction": 509,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 510,
+   "standing": 42000,
+   "flags": 17
+  },
+  {
+   "faction": 529,
+   "standing": 41800,
+   "flags": 1
+  },
+  {
+   "faction": 530,
+   "standing": 0,
+   "flags": 17
+  },
+  {
+   "faction": 549,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 550,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 551,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 569,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 570,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 571,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 574,
+   "standing": 0,
+   "flags": 4
+  },
+  {
+   "faction": 576,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 577,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 589,
+   "standing": 0,
+   "flags": 6
+  },
+  {
+   "faction": 609,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 629,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 630,
+   "standing": 0,
+   "flags": 0
+  },
+  {
+   "faction": 709,
+   "standing": 0,
+   "flags": 20
+  },
+  {
+   "faction": 729,
+   "standing": 42000,
+   "flags": 17
+  },
+  {
+   "faction": 730,
+   "standing": 0,
+   "flags": 2
+  },
+  {
+   "faction": 749,
+   "standing": 42000,
+   "flags": 1
+  },
+  {
+   "faction": 789,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 809,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 889,
+   "standing": 42000,
+   "flags": 17
+  },
+  {
+   "faction": 890,
+   "standing": 0,
+   "flags": 6
+  },
+  {
+   "faction": 891,
+   "standing": 0,
+   "flags": 14
+  },
+  {
+   "faction": 892,
+   "standing": 0,
+   "flags": 24
+  },
+  {
+   "faction": 909,
+   "standing": 0,
+   "flags": 16
+  },
+  {
+   "faction": 910,
+   "standing": 84000,
+   "flags": 1
+  }
+ ],
+ "quests": [
+  {
+   "quest": 8276,
+   "status": 1,
+   "rewarded": 0,
+   "explored": 0,
+   "timer": 1790960039,
+   "mobcount1": 0,
+   "mobcount2": 0,
+   "mobcount3": 0,
+   "mobcount4": 0,
+   "itemcount1": 0,
+   "itemcount2": 0,
+   "itemcount3": 0,
+   "itemcount4": 0
+  }
+ ],
+ "questsWeekly": [],
+ "honorCp": [],
+ "items": [
+  {
+   "ref": 40666,
+   "entry": 6948,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 40674,
+   "entry": 2102,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137803,
+   "entry": 4500,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137805,
+   "entry": 4500,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137807,
+   "entry": 4500,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137808,
+   "entry": 18319,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [
+    {
+     "slot": 3,
+     "id": 1349,
+     "duration": 0,
+     "charges": 0
+    }
+   ],
+   "randomPropertyId": 1413,
+   "durability": 70,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137809,
+   "entry": 20622,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137810,
+   "entry": 10125,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [
+    {
+     "slot": 3,
+     "id": 1095,
+     "duration": 0,
+     "charges": 0
+    }
+   ],
+   "randomPropertyId": 360,
+   "durability": 60,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137811,
+   "entry": 6120,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137812,
+   "entry": 16845,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 140,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137813,
+   "entry": 21463,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 50,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137814,
+   "entry": 12903,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 105,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137815,
+   "entry": 16984,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 70,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137816,
+   "entry": 13135,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 40,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137817,
+   "entry": 22715,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 40,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137818,
+   "entry": 22722,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137819,
+   "entry": 21201,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137820,
+   "entry": 22954,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137821,
+   "entry": 21180,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137822,
+   "entry": 10224,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [
+    {
+     "slot": 3,
+     "id": 404,
+     "duration": 0,
+     "charges": 0
+    }
+   ],
+   "randomPropertyId": 212,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137823,
+   "entry": 19364,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 120,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137824,
+   "entry": 19361,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 90,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137825,
+   "entry": 11285,
+   "count": 200,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137828,
+   "entry": 18253,
+   "count": 2,
+   "duration": 0,
+   "charges": [
+    -1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137829,
+   "entry": 5956,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137830,
+   "entry": 6219,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137832,
+   "entry": 5060,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137833,
+   "entry": 4471,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 137834,
+   "entry": 12643,
+   "count": 5,
+   "duration": 0,
+   "charges": [
+    -1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 159163,
+   "entry": 5863,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 1,
+   "enchantments": [
+    {
+     "slot": 0,
+     "id": 159163,
+     "duration": 0,
+     "charges": 0
+    }
+   ],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 159199,
+   "entry": 14144,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 55,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 159207,
+   "entry": 4378,
+   "count": 4,
+   "duration": 0,
+   "charges": [
+    -1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 159509,
+   "entry": 4499,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 185389,
+   "entry": 8950,
+   "count": 17,
+   "duration": 0,
+   "charges": [
+    -1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 185390,
+   "entry": 8766,
+   "count": 19,
+   "duration": 0,
+   "charges": [
+    -1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 185391,
+   "entry": 10498,
+   "count": 1,
+   "duration": 0,
+   "charges": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 185392,
+   "entry": 12643,
+   "count": 5,
+   "duration": 0,
+   "charges": [
+    -1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  },
+  {
+   "ref": 185393,
+   "entry": 12404,
+   "count": 5,
+   "duration": 0,
+   "charges": [
+    -1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "flags": 0,
+   "enchantments": [],
+   "randomPropertyId": 0,
+   "durability": 0,
+   "creator": null,
+   "giftCreator": null,
+   "text": null,
+   "loot": [],
+   "gift": null
+  }
+ ],
+ "inventory": [
+  {
+   "bag": null,
+   "slot": 0,
+   "item": 137808
+  },
+  {
+   "bag": null,
+   "slot": 1,
+   "item": 137809
+  },
+  {
+   "bag": null,
+   "slot": 2,
+   "item": 137810
+  },
+  {
+   "bag": null,
+   "slot": 3,
+   "item": 137811
+  },
+  {
+   "bag": null,
+   "slot": 4,
+   "item": 137812
+  },
+  {
+   "bag": null,
+   "slot": 5,
+   "item": 137813
+  },
+  {
+   "bag": null,
+   "slot": 6,
+   "item": 137814
+  },
+  {
+   "bag": null,
+   "slot": 7,
+   "item": 137815
+  },
+  {
+   "bag": null,
+   "slot": 8,
+   "item": 137816
+  },
+  {
+   "bag": null,
+   "slot": 9,
+   "item": 137817
+  },
+  {
+   "bag": null,
+   "slot": 10,
+   "item": 137818
+  },
+  {
+   "bag": null,
+   "slot": 11,
+   "item": 137819
+  },
+  {
+   "bag": null,
+   "slot": 12,
+   "item": 137820
+  },
+  {
+   "bag": null,
+   "slot": 13,
+   "item": 137821
+  },
+  {
+   "bag": null,
+   "slot": 14,
+   "item": 137822
+  },
+  {
+   "bag": null,
+   "slot": 15,
+   "item": 137823
+  },
+  {
+   "bag": null,
+   "slot": 17,
+   "item": 137824
+  },
+  {
+   "bag": null,
+   "slot": 19,
+   "item": 159509
+  },
+  {
+   "bag": null,
+   "slot": 20,
+   "item": 137803
+  },
+  {
+   "bag": null,
+   "slot": 21,
+   "item": 137805
+  },
+  {
+   "bag": null,
+   "slot": 22,
+   "item": 137807
+  },
+  {
+   "bag": null,
+   "slot": 23,
+   "item": 40666
+  },
+  {
+   "bag": null,
+   "slot": 24,
+   "item": 137825
+  },
+  {
+   "bag": null,
+   "slot": 25,
+   "item": 159163
+  },
+  {
+   "bag": null,
+   "slot": 26,
+   "item": 40674
+  },
+  {
+   "bag": null,
+   "slot": 27,
+   "item": 137828
+  },
+  {
+   "bag": null,
+   "slot": 28,
+   "item": 137829
+  },
+  {
+   "bag": null,
+   "slot": 29,
+   "item": 137830
+  },
+  {
+   "bag": null,
+   "slot": 30,
+   "item": 185389
+  },
+  {
+   "bag": null,
+   "slot": 31,
+   "item": 137832
+  },
+  {
+   "bag": null,
+   "slot": 32,
+   "item": 137833
+  },
+  {
+   "bag": null,
+   "slot": 33,
+   "item": 185390
+  },
+  {
+   "bag": null,
+   "slot": 34,
+   "item": 185391
+  },
+  {
+   "bag": null,
+   "slot": 35,
+   "item": 185392
+  },
+  {
+   "bag": null,
+   "slot": 36,
+   "item": 185393
+  }
+ ],
+ "pets": [
+  {
+   "entry": 3619,
+   "modelid": 4472,
+   "CreatedBySpell": 0,
+   "PetType": 1,
+   "level": 60,
+   "exp": 0,
+   "Reactstate": 1,
+   "loyaltypoints": 670,
+   "loyalty": 6,
+   "xpForNextLoyalty": 0,
+   "trainpoint": 0,
+   "name": "Ghost Saber",
+   "renamed": 1,
+   "slot": 0,
+   "curhealth": 3206,
+   "curmana": 100,
+   "curhappiness": 666000,
+   "savetime": 1791019432,
+   "resettalents_cost": 0,
+   "resettalents_time": 0,
+   "actionBar": [
+    {
+     "type": 7,
+     "action": 2
+    },
+    {
+     "type": 7,
+     "action": 1
+    },
+    {
+     "type": 7,
+     "action": 0
+    },
+    {
+     "type": 193,
+     "action": 3009
+    },
+    {
+     "type": 193,
+     "action": 17261
+    },
+    {
+     "type": 193,
+     "action": 16697
+    },
+    {
+     "type": 193,
+     "action": 23110
+    },
+    {
+     "type": 6,
+     "action": 2
+    },
+    {
+     "type": 6,
+     "action": 1
+    },
+    {
+     "type": 6,
+     "action": 0
+    }
+   ],
+   "teachSpells": [
+    16829,
+    2982,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "spells": [
+    {
+     "spell": 3009,
+     "active": 193
+    },
+    {
+     "spell": 5042,
+     "active": 1
+    },
+    {
+     "spell": 14921,
+     "active": 193
+    },
+    {
+     "spell": 16697,
+     "active": 129
+    },
+    {
+     "spell": 17261,
+     "active": 193
+    },
+    {
+     "spell": 23110,
+     "active": 193
+    },
+    {
+     "spell": 23992,
+     "active": 1
+    },
+    {
+     "spell": 24446,
+     "active": 1
+    },
+    {
+     "spell": 24453,
+     "active": 193
+    },
+    {
+     "spell": 24488,
+     "active": 1
+    },
+    {
+     "spell": 24492,
+     "active": 1
+    },
+    {
+     "spell": 24493,
+     "active": 1
+    },
+    {
+     "spell": 24551,
+     "active": 1
+    }
+   ],
+   "spellCooldowns": [],
+   "auras": []
+  }
+ ],
+ "mail": [
+  {
+   "messageType": 2,
+   "stationery": 62,
+   "mailTemplateId": 0,
+   "sender": 6,
+   "subject": "4378:0:1",
+   "expire_time": 1793551946,
+   "deliver_time": 1790959946,
+   "money": 0,
+   "cod": 0,
+   "checked": 4,
+   "body": "               0:5040:5040",
+   "items": [
+    159207
+   ]
+  },
+  {
+   "messageType": 2,
+   "stationery": 62,
+   "mailTemplateId": 0,
+   "sender": 6,
+   "subject": "14144:0:1",
+   "expire_time": 1793551946,
+   "deliver_time": 1790959946,
+   "money": 0,
+   "cod": 0,
+   "checked": 4,
+   "body": "               0:139431:139431",
+   "items": [
+    159199
+   ]
+  },
+  {
+   "messageType": 2,
+   "stationery": 62,
+   "mailTemplateId": 0,
+   "sender": 6,
+   "subject": "12643:0:3",
+   "expire_time": 1793610762,
+   "deliver_time": 1791018762,
+   "money": 0,
+   "cod": 0,
+   "checked": 4,
+   "body": null,
+   "items": [
+    137834
+   ]
+  }
+ ],
+ "display": {
+  "guild": null,
+  "stats": null
+ }
+}
