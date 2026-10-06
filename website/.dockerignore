@@ -1,0 +1,6 @@
+node_modules
+.next
+.env*
+npm-debug.log*
+# mounted at runtime instead of baked into the image (48 MB)
+public/icons

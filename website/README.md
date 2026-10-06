@@ -3,7 +3,17 @@
 Small Next.js app to browse the characters of this CMaNGOS Classic server, export one to a JSON file and import
 it back as a new character under any account.
 
-## Run
+## Run with Docker
+
+```bash
+docker compose up -d --build website
+```
+
+Open http://localhost:8080. `WEBSITE_PORT` and `WEBSITE_BIND` in the root `.env` change the port and the interface
+(default `127.0.0.1`, this machine only). Icons are mounted from `website/public/icons`, so fetch them once with
+`npm run icons`.
+
+## Run for development
 
 The database must be up and published on the host (`DB_HOST_PORT` in the root `.env`, default 3307):
 

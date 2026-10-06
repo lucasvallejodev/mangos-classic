@@ -241,5 +241,37 @@ services:
       - ./config:/opt/cmangos/etc
       - ./logs:/opt/cmangos/logs
 
+  # Character Manager: browse, export and import characters. It has no login and can
+  # write to the character database, so it is published on this machine only by default.
+  website:
+    build:
+      context: ./website
+    image: cmangos-classic-website:local
+    container_name: cmangos-website
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      <<: *db-env
+      TZ: ${TZ:-UTC}
+      DB_USER: ${DB_USER:-mangos}
+      DB_PASSWORD: ${DB_PASSWORD}
+      WORLD_DB: ${WORLD_DB:-classicmangos}
+      CHAR_DB: ${CHAR_DB:-classiccharacters}
+      REALM_DB: ${REALM_DB:-classicrealmd}
+      REALM_ID: ${REALM_ID:-1}
+      # used to refuse imports while the world server is running
+      WORLD_HOST: mangosd
+      WORLD_PORT: 8085
+      CHARACTERS_PER_REALM: ${CHARACTERS_PER_REALM:-10}
+      ALLOW_TWO_SIDE_ACCOUNTS: ${ALLOW_TWO_SIDE_ACCOUNTS:-0}
+      BOT_ACCOUNT_PREFIX: ${BOT_ACCOUNT_PREFIX:-RNDBOT}
+    ports:
+      - "${WEBSITE_BIND:-127.0.0.1}:${WEBSITE_PORT:-8080}:3000"
+    volumes:
+      # game icons, fetched with `npm run icons` in website/ (optional)
+      - ./website/public/icons:/app/public/icons:ro
+
 volumes:
   db-data:

@@ -21,7 +21,8 @@ const get = (key: string, fallback: string) => process.env[key] ?? root[key] ?? 
 export const env = {
   db: {
     host: get("DB_HOST", "127.0.0.1"),
-    port: Number(get("DB_HOST_PORT", "3307")),
+    // DB_PORT is set inside Docker; on the host the database is reached through its published port
+    port: Number(process.env.DB_PORT ?? get("DB_HOST_PORT", "3307")),
     user: get("DB_USER", "mangos"),
     password: get("DB_PASSWORD", ""),
   },
@@ -30,7 +31,7 @@ export const env = {
   realmDb: get("REALM_DB", "classicrealmd"),
   realmId: Number(get("REALM_ID", "1")),
   worldHost: get("WORLD_HOST", "127.0.0.1"),
-  worldPort: Number(get("REALM_PORT", "8085")),
+  worldPort: Number(process.env.WORLD_PORT ?? get("REALM_PORT", "8085")),
   botAccountPrefix: get("BOT_ACCOUNT_PREFIX", "RNDBOT"),
   charactersPerRealm: Number(get("CHARACTERS_PER_REALM", "10")),
   allowTwoSideAccounts: get("ALLOW_TWO_SIDE_ACCOUNTS", "0") === "1",

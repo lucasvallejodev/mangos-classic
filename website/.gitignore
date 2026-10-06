@@ -42,3 +42,6 @@ next-env.d.ts
 
 # game icons, fetched with `npm run icons`
 /public/icons/
+
+# generated lookups are part of the app (the root .gitignore ignores every data/ folder)
+!/src/data/
